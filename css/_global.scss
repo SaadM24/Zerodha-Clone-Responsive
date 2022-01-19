@@ -1,0 +1,22 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  padding-top: 65px;
+  font-family: $font-body;
+  line-height: 1.7;
+  margin: 0;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #424242;
+  min-width: 350px;
+}
