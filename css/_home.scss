@@ -1,4 +1,11 @@
 .navigation {
+  @media only screen and (max-width: 1100px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media only screen and (max-width: 960px) {
+    height: 60px;
+  }
   top: 0;
   width: 100%;
   z-index: 10;
@@ -21,6 +28,12 @@
 }
 
 .flexrow {
+  @media only screen and (max-width: 960px) {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 800px) {
+    margin-bottom: 20px;
+  }
   display: flex;
   flex: 0 1 auto;
   flex-flow: row wrap;
@@ -28,6 +41,14 @@
 }
 
 .logo1 {
+  @media only screen and (max-width: 960px) {
+    min-width: 91%;
+    max-width: 91%;
+  }
+  @media only screen and (max-width: 800px) {
+    position: relative;
+    min-width: 100%;
+  }
   margin-left: 0;
   position: relative;
   flex-basis: 40%;
@@ -36,10 +57,47 @@
 }
 
 .para1 li {
+  @media only screen and (max-width: 960px) {
+    margin: 0;
+    text-align: left;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+    padding: 7px;
+  }
   display: inline;
 }
 
+.small {
+  @media only screen and (max-width: 960px) {
+    display: none !important;
+  }
+}
+
+.logo1 a img {
+  @media only screen and (max-width: 960px) {
+    width: 150px !important;
+    height: auto;
+    max-height: 100px;
+    vertical-align: middle;
+  }
+}
+
+.navigation .logo1 img {
+  @media only screen and (max-width: 960px) {
+    position: relative;
+    top: 15px;
+  }
+  @media only screen and (max-width: 550px) {
+    max-width: 110px;
+  }
+}
+
 .para1 li a {
+  @media only screen and (max-width: 960px) {
+    padding: 0;
+    font-size: 0.9rem !important;
+    color: #444;
+  }
   color: #666;
   font-size: 0.9rem;
   transition: color 0.3s;
@@ -49,6 +107,13 @@
 }
 
 .logo1-2 {
+  @media only screen and (max-width: 960px) {
+    min-width: 91%;
+    max-width: 91%;
+  }
+  @media screen and (max-width: 800px) {
+    min-width: 100%;
+  }
   display: flex;
   flex: 0 1 auto;
   flex-basis: 56.6666666667%;
@@ -56,6 +121,14 @@
 }
 
 .para1 {
+  @media only screen and (max-width: 960px) {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+  }
   justify-content: space-between;
   list-style-type: none;
   text-align: right;
@@ -73,6 +146,12 @@
 }
 
 .navcon {
+  @media only screen and (max-width: 960px) {
+    overflow: visible;
+  }
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+  }
   position: relative;
   width: 1100px;
   max-width: 100%;
@@ -83,6 +162,18 @@
 .slot1 {
   text-align: center;
 }
+
+.slt1 {
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+  }
+}
+
+.slot1 .slt1 .img1 img {
+  margin-bottom: 45px;
+  height: auto;
+}
+
 .img1 {
   width: 100%;
   height: 317px;
@@ -116,6 +207,10 @@
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
+}
+
+.slot2 {
+  padding-top: 100px !important;
 }
 
 .slt2 {
@@ -214,6 +309,14 @@ div {
 }
 
 section {
+  @media only screen and (max-width: 768px) {
+    padding: 30px 20px !important;
+  }
+  @media only screen and (max-width: 1100px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   display: block;
   padding: 0 20px 120px 20px;
   padding: 80px 0 0 0;
@@ -226,6 +329,25 @@ section {
   max-width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.slt3 .img3-1 a img {
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+    width: 650px;
+    height: 300px;
+  }
+  @media screen and (max-width: 500px) {
+    overflow: auto;
+    width: 440px;
+    height: 200px;
+  }
+}
+
+.slt3 {
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+  }
 }
 
 .slt3 p {
@@ -284,6 +406,10 @@ a {
   margin: 0 auto;
 }
 .slt4 {
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+    margin-bottom: 20px;
+  }
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -293,6 +419,9 @@ a {
 }
 
 .txt4 {
+  @media screen and (max-width: 800px) {
+    min-width: 100%;
+  }
   margin-left: 0;
   flex-basis: 40%;
   width: 40%;
@@ -300,6 +429,11 @@ a {
 }
 
 .list4 {
+  @media screen and (max-width: 800px) {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+
   flex-basis: 48%;
   width: 48%;
   box-sizing: border-box;
@@ -309,6 +443,11 @@ a {
 }
 
 .col4-1 {
+  @media screen and (max-width: 800px) {
+    min-width: 100%;
+    border-right: 1px solid #ccc;
+    border: 1px solid #ccc;
+  }
   margin-left: 0;
   text-align: center;
   box-sizing: border-box;
@@ -326,6 +465,11 @@ a {
 }
 
 .col4-2 {
+  @media screen and (max-width: 800px) {
+    min-width: 100%;
+    border-right: 1px solid #ccc;
+    border: 1px solid #ccc;
+  }
   text-align: center;
   flex-basis: 48%;
   width: 48%;
@@ -340,6 +484,10 @@ a {
 }
 
 .slt5 {
+  @media screen and (max-width: 800px) {
+    overflow: auto;
+    margin-bottom: 20px;
+  }
   display: flex;
   position: relative;
   width: 1100px px;
@@ -353,6 +501,9 @@ a {
 }
 
 .img5-1 {
+  @media screen and (max-width: 800px) {
+    min-width: 100%;
+  }
   margin-left: 0;
   text-align: center;
   flex-basis: 39.3333333333%;
@@ -361,7 +512,14 @@ a {
   flex: 64 1 auto;
 }
 
+.img5-1 a img {
+  margin-bottom: 30px;
+}
+
 .txt5-1 {
+  @media screen and (max-width: 800px) {
+    min-width: 100%;
+  }
   flex-basis: 48%;
   width: 48%;
   box-sizing: border-box;
@@ -369,6 +527,10 @@ a {
 }
 
 .slot6 {
+  @media only screen and (max-width: 550px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   padding-bottom: 60px;
   padding: 40px 0;
   text-align: center;
@@ -401,6 +563,12 @@ footer {
 }
 
 .cmpltfooter {
+  @media only screen and (max-width: 1100px) {
+    padding: 0 20px;
+  }
+  @media only screen and (max-width: 800px) {
+    overflow: auto;
+  }
   position: relative;
   width: 1100px;
   max-width: 100%;
@@ -409,6 +577,9 @@ footer {
 }
 
 .mainflex {
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 20px;
+  }
   display: flex;
   flex: 0 1 auto;
   flex-flow: row wrap;
@@ -416,6 +587,10 @@ footer {
 }
 
 .foot1 {
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 40px;
+    min-width: 100%;
+  }
   margin-left: 0;
   flex-basis: 22%;
   width: 22%;
@@ -483,6 +658,10 @@ footer .soc a {
 }
 
 .foot2 {
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 40px;
+    min-width: 100%;
+  }
   margin-left: 0;
   flex-basis: 22%;
   width: 22%;
@@ -490,6 +669,10 @@ footer .soc a {
 }
 
 .foot3 {
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 40px;
+    min-width: 100%;
+  }
   margin-left: 0;
   flex-basis: 22%;
   width: 22%;
@@ -497,10 +680,20 @@ footer .soc a {
 }
 
 .foot4 {
+  @media only screen and (max-width: 800px) {
+    margin-bottom: 40px;
+    min-width: 100%;
+  }
   margin-left: 0;
   flex-basis: 22%;
   width: 22%;
   flex: 0 1 auto;
+}
+
+.foot5 {
+  @media screen and (max-width: 800px) {
+    margin-bottom: 20px;
+  }
 }
 
 footer .mainflex .navhead {
